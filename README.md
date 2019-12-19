@@ -44,7 +44,7 @@ First enable swap partition
 
 Now mount our main partition so we can write to it
 
-`Mount /dev/sda3 /mnt`
+`mount /dev/sda3 /mnt`
 
 install the base arch system
 
