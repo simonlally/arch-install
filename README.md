@@ -1,14 +1,14 @@
 (0) are we booted into a UEFI environment?
-ls /sys/firmware/efi
+`ls /sys/firmware/efi`
 if the directory is empty or doesn’t exist then no, if there’s files there you’re good to go
 
 Check internet
 `ping 1.1.1.1`
 
-if you want wifi
+if you want wifi (if you are using ethernet you can skip this) :
 
 `ip addr`
-`WiFi-menu <WiFi adapter name>`
+`wifi-menu <WiFi adapter name>`
 And then connect your WiFi information
 
 (1) partitioning
@@ -90,7 +90,7 @@ Link it
 
 `ln -s /usr/share/zoneinfo/America/New_York /etc/localtime`
 
-`Hwclock — systohc —utc`
+`hwclock — systohc —utc`
 
 Upgrade packages w/ pacman if you haven’t already
 
@@ -136,6 +136,9 @@ download dhcpcd and enable the service so we have internet when we reboot into o
 `pacman -S dhcpcd`
 now enable it:
 `systemctl enable dhcpcd.service`
+
+I also recommend you download a texteditor as the arch base package doesn't come with one.  
+`pacman -S vim`
 
 `exit`
 
