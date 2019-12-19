@@ -1,13 +1,14 @@
+# ARCH LINUX INSTALLATION by SIMON
 (0) are we booted into a UEFI environment?
 `ls /sys/firmware/efi`
 if the directory is empty or doesn’t exist then no, if there’s files there you’re good to go
 
 Check internet
 `ping 1.1.1.1`
-
 if you want wifi (if you are using ethernet you can skip this) :
 
 `ip addr`
+
 `wifi-menu <WiFi adapter name>`
 And then connect your WiFi information
 
@@ -15,7 +16,8 @@ And then connect your WiFi information
 Show installed discs on system with
 `lsblk`
 
-`Layout: 300M for EFI partition (EFI System type), swap partition size of installed ram (Linux swap), and rest of the drive goes to arch, cfdisk will automatically make it ext4, so no need to change it`
+## NOTE
+Layout: 300M for EFI partition (EFI System type), swap partition size of installed ram (Linux swap), and rest of the drive goes to arch, cfdisk will automatically make it ext4, so no need to change it
 
 To start formatting:
 `cfdisk /dev/sda`
