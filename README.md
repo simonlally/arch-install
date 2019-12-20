@@ -92,7 +92,7 @@ Link it
 
 `ln -s /usr/share/zoneinfo/America/New_York /etc/localtime`
 
-`hwclock — systohc —utc`
+`hwclock —-systohc —-utc`
 
 Upgrade packages w/ pacman if you haven’t already
 
@@ -130,7 +130,7 @@ Make the EFI directory and mount it
 
 `mount /dev/sda1 /boot/EFI`
 
-`grub-install —target=x86_64-efi —bootloader-id=grub_uefi —recheck`
+`grub-install —-target=x86_64-efi —-bootloader-id=grub_uefi —-recheck`
 
 `grub-mkconfig -o /boot/grub/grub.cfg`
 
