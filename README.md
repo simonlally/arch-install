@@ -122,7 +122,7 @@ Save and exit
 
 Let’s install grub
 
-`pacman-S grub efibootmgr dosfstools mtools`
+`pacman -S grub efibootmgr dosfstools mtools`
 
 Make the EFI directory and mount it
 
