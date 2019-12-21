@@ -77,6 +77,7 @@ Generate the conf with
 `locale-gen`
 
 `echo LANG=en_US.UTF-8 > /etc/locale.conf`
+
 `export LANG=en_US.UTF-8`
 
 Set the time zone , remove a local time zone file if it already exists
