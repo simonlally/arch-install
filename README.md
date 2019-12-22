@@ -3,6 +3,8 @@
 `ls /sys/firmware/efi`
 if the directory is empty or doesn’t exist then no, if there’s files there you’re good to go
 
+
+## Pre-installation
 Check internet
 `ping 1.1.1.1`
 if you want wifi (if you are using ethernet you can skip this) :
@@ -16,7 +18,7 @@ And then connect your WiFi information
 Show installed discs on system with
 `lsblk`
 
-## NOTE
+## Partitioning and formatting
 Layout: 300M for EFI partition (EFI System type), swap partition size of installed ram (Linux swap), and rest of the drive goes to arch, cfdisk will automatically make it ext4, so no need to change it
 
 To start formatting:
@@ -43,6 +45,8 @@ Mount and chroot.
 First enable swap partition
 
 `swapon /dev/sda2`
+
+## Installation
 
 Now mount our main partition so we can write to it
 
@@ -120,6 +124,8 @@ Allow sudo when we boot into the installation
 Uncomment `%wheel ALL=(ALL) ALL`
 
 Save and exit
+
+## Grub installation
 
 Let’s install grub
 
