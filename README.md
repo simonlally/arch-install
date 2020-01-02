@@ -156,5 +156,3 @@ I also recommend you download a texteditor as the arch base package doesn't come
 now reboot into your new OS! see my guide for installing a desktop environment.
 
 `reboot`
-
-## Desktop Environments
