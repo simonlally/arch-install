@@ -1,13 +1,17 @@
 # ARCH LINUX INSTALLATION by SIMON
-(0) are we booted into a UEFI environment?
+(0) check that we are booted into a UEFI environment
+
 `ls /sys/firmware/efi`
-if the directory is empty or doesn’t exist then no, if there’s files there you’re good to go
+
+if the directory is empty or doesn’t exist then we are not booted into a UEFI environment, if there’s files there you’re good to go
 
 
 ## Pre-installation
 Check internet
 `ping 1.1.1.1`
-if you want wifi (if you are using ethernet you can skip this) :
+
+
+Enabling WiFi (if you are using ethernet you can skip this) :
 
 `ip addr`
 
