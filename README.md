@@ -1,4 +1,5 @@
-# ARCH LINUX INSTALLATION by SIMON
+# ARCH LINUX INSTALLATION 
+## This is not meant to replace the installation guide on archlinux.org but meant to be used in tandem.
 (0) check that we are booted into a UEFI environment
 
 `ls /sys/firmware/efi`
