@@ -1,4 +1,5 @@
-# ARCH LINUX INSTALLATION 
+# ARCH LINUX INSTALLATION v1.0.2
+updated as of 2/20/2020
 ## This is not meant to replace the installation guide on archlinux.org but meant to be used in tandem.
 (0) check that we are booted into a UEFI environment
 
