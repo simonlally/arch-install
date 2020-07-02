@@ -32,8 +32,6 @@ To start formatting:
 
 Assuming /dev/sda1 is your EFI partition, /dev/sda2 is your swap partition and /dev/sda3 is your filesystem continue and you have these partitions setup, continue to format:
 
-Delete stuff if you wish, thou cannot haveth windowth backeth
-
 Now the partitions are created but not formatted
 For efi
 `mkfs.fat -F32 /dev/sda1`
